@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="login">
+    <div class="row">
+      <ul class="icone">
+        <li><a href="#"><i class="bi bi-person"></i></a></li>
+      </ul>
+        <form action="" method="post">
+            <div class="row md-3">
+                <label for="email">email</label>
+              <input  name="email"  type="text" class="form-control" placeholder="Digite um e-mail" aria-label="Last name">
+            </div>
+            <div class="row md-3">
+                <label for="senha">senha</label>
+              <input  name="password" type="password" class="form-control" placeholder="********" aria-label="Last name">
+            </div>       
+          </div><br>
+            <button type="submit" class="btn btn-primary">logar</button> 
+        </form>
+</section>
+{% endblock %}

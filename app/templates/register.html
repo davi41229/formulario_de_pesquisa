@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="register">
+  <h1>Realize o seu Mini cadastro para responder a <small style="color:gray ;">pesquisa de satisfação!</small></h1>
+  <ul class="icone">
+    <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+  </ul>
+  <form action="" method="post">
+    <div class="row">
+      <div class="col-4">
+          <label for="nome">nome</label>
+        <input name="name" type="text" class="form-control" placeholder="Digite seu nome" aria-label="First name">
+      </div>
+      <div class="col">
+          <label for="email">email</label>
+        <input name="email" type="text" class="form-control" placeholder="Digite um e-mail" aria-label="Last name">
+      </div>
+      <div class="col-3">
+          <label for="senha">senha</label>
+        <input name="password" type="password" class="form-control" placeholder="Crie uma senha" aria-label="Last name">
+      </div>       
+    </div><br>
+      <button type="submit" class="btn btn-primary">registrar</button>
+  </form>   
+</section>
+{% endblock %}
